@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+ 
+  <channel>
+    <title>Jordan Bowman</title>
+    <description>Web designer + developer
+</description>
+    <link>http://www.jrdnbwmn.com/</link>
+    <atom:link href="http://www.jrdnbwmn.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Welcome to&amp;nbsp;Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is&amp;nbsp;updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it&amp;nbsp;works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code&amp;nbsp;snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 06 Sep 2014 00:00:00 -0700</pubDate>
+        <link>http://www.jrdnbwmn.com/blog/welcome-to-jekyll</link>
+        <guid isPermaLink="true">http://www.jrdnbwmn.com/blog/welcome-to-jekyll</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Example&amp;nbsp;post</title>
+        <description>&lt;div class=&quot;message&quot;&gt;
+  Howdy! This is an example blog post that shows several types of &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; content supported in this&amp;nbsp;theme.
+&lt;/div&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet&amp;nbsp;fermentum.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id&amp;nbsp;elit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed&amp;nbsp;consectetur.&lt;/p&gt;
+
+&lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;&amp;nbsp;elements&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; defines a long list of available inline tags, a complete list of which can be found on the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot;&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use&amp;nbsp;&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use&amp;nbsp;&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Langage&quot;&gt;&lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;&lt;/abbr&gt; should use &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code&gt;title&lt;/code&gt; attribute for the full&amp;nbsp;phrase.&lt;/li&gt;
+  &lt;li&gt;Citations, like &lt;cite&gt;— Mark otto&lt;/cite&gt;, should use&amp;nbsp;&lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use&amp;nbsp;&lt;code&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses&amp;nbsp;&lt;code&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of these elements are styled by browsers with few modifications on our&amp;nbsp;part.&lt;/p&gt;
+
+&lt;h2 id=&quot;heading&quot;&gt;Heading&lt;/h2&gt;
+
+&lt;p&gt;Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at&amp;nbsp;eros.&lt;/p&gt;
+
+&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code&gt;code element&lt;/code&gt; montes, nascetur ridiculus&amp;nbsp;mus.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Example can be run directly in your JavaScript console&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Create a function that takes two arguments and returns the sum of those arguments&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;return a + b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Call the function&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// &amp;gt; 8&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum&amp;nbsp;massa.&lt;/p&gt;
+
+&lt;h3 id=&quot;gists-via-github-pages&quot;&gt;Gists via GitHub&amp;nbsp;Pages&lt;/h3&gt;
+
+&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio&amp;nbsp;dui.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/5555251.js?file=gist.md&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod&amp;nbsp;semper.&lt;/p&gt;
+
+&lt;h3 id=&quot;lists&quot;&gt;Lists&lt;/h3&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet&amp;nbsp;risus.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur&amp;nbsp;et.&lt;/li&gt;
+  &lt;li&gt;Donec id elit non mi porta gravida at eget&amp;nbsp;metus.&lt;/li&gt;
+  &lt;li&gt;Nulla vitae elit libero, a pharetra&amp;nbsp;augue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra&amp;nbsp;augue.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Vestibulum id ligula porta felis euismod&amp;nbsp;semper.&lt;/li&gt;
+  &lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus&amp;nbsp;mus.&lt;/li&gt;
+  &lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non&amp;nbsp;magna.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at&amp;nbsp;lobortis.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;HyperText Markup Language&amp;nbsp;(&lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;)&lt;/dt&gt;
+  &lt;dd&gt;The language used to describe and define the content of a Web&amp;nbsp;page&lt;/dd&gt;
+
+  &lt;dt&gt;Cascading Style Sheets&amp;nbsp;(&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;)&lt;/dt&gt;
+  &lt;dd&gt;Used to describe the appearance of Web&amp;nbsp;content&lt;/dd&gt;
+
+  &lt;dt&gt;JavaScript&amp;nbsp;(&lt;span class=&quot;caps&quot;&gt;JS&lt;/span&gt;)&lt;/dt&gt;
+  &lt;dd&gt;The programming language used to build advanced Web sites and&amp;nbsp;applications&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu&amp;nbsp;leo.&lt;/p&gt;
+
+&lt;h3 id=&quot;images&quot;&gt;Images&lt;/h3&gt;
+
+&lt;p&gt;Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit&amp;nbsp;at.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://placehold.it/800x400&quot; alt=&quot;placeholder&quot; title=&quot;Large example image&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/400x200&quot; alt=&quot;placeholder&quot; title=&quot;Medium example image&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/200x200&quot; alt=&quot;placeholder&quot; title=&quot;Small example image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tables&quot;&gt;Tables&lt;/h3&gt;
+
+&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing&amp;nbsp;elit.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Upvotes&lt;/th&gt;
+      &lt;th&gt;Downvotes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Totals&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alice&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bob&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Charlie&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu&amp;nbsp;leo.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/poole/poole/issues/new&quot;&gt;Open an&amp;nbsp;issue.&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 06 Sep 2014 00:00:00 -0700</pubDate>
+        <link>http://www.jrdnbwmn.com/blog/example-post</link>
+        <guid isPermaLink="true">http://www.jrdnbwmn.com/blog/example-post</guid>
+        
+        
+      </item>
+    
+    
+  </channel>
+  
+</rss>
