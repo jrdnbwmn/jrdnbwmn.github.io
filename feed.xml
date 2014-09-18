@@ -5,8 +5,8 @@
     <title>Jordan Bowman</title>
     <description>Web designer + developer
 </description>
-    <link>http://www.jrdnbwmn.com/</link>
-    <atom:link href="http://www.jrdnbwmn.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://jrdnbwmn.github.com/</link>
+    <atom:link href="http://jrdnbwmn.github.com/feed.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
@@ -26,7 +26,7 @@
 &lt;p&gt;So you might be thinking, “Okay, sounds pretty cool but I bet it doesn’t work in every browser.”&amp;nbsp;Actually…&lt;/p&gt;
 
 &lt;figure class=&quot;img-breakout&quot;&gt;
-    &lt;img src=&quot;/dist/img/2014/September/svgcaniuse.png&quot; alt=&quot;SVG Support&quot; /&gt;
+    &lt;img src=&quot;http://jrdnbwmn.github.com/dist/img/2014/September/svgcaniuse.png&quot; alt=&quot;SVG Support&quot; /&gt;
     &lt;figcaption class=&quot;mt&quot;&gt;From caniuse.com&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -60,7 +60,7 @@
 &lt;p&gt;You can make an &lt;span class=&quot;caps&quot;&gt;SVG&lt;/span&gt; out of anything that’s vector (.ai, .eps, .pdf, .somethingelse). Just put it in Illustrator or Sketch and “save as” an&amp;nbsp;&lt;span class=&quot;caps&quot;&gt;SVG.&lt;/span&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;img-breakout&quot;&gt;
-    &lt;img src=&quot;/dist/img/2014/September/saving_svgs.png&quot; alt=&quot;Saving SVGs&quot; /&gt;
+    &lt;img src=&quot;http://jrdnbwmn.github.com/dist/img/2014/September/saving_svgs.png&quot; alt=&quot;Saving SVGs&quot; /&gt;
     &lt;figcaption class=&quot;mt&quot;&gt;&lt;span class=&quot;caps&quot;&gt;SVG&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;1.1&lt;/span&gt; is best, and be sure to uncheck “Preserve Illustrator editing capabilities&amp;#8221; to decrease the file size.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -74,7 +74,7 @@
 &lt;p&gt;Since SVGs are just code, you can actually take that code and place it right into your &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; document. Open the &lt;span class=&quot;caps&quot;&gt;SVG&lt;/span&gt; in a text editor, copy the code you see, and paste that code where you want the &lt;span class=&quot;caps&quot;&gt;SVG&lt;/span&gt; to show&amp;nbsp;up.&lt;/p&gt;
 
 &lt;figure class=&quot;img-aside&quot;&gt;
-    &lt;img src=&quot;/dist/img/2014/September/inline_svg.png&quot; alt=&quot;Inline SVG Example&quot; /&gt;
+    &lt;img src=&quot;http://jrdnbwmn.github.com/dist/img/2014/September/inline_svg.png&quot; alt=&quot;Inline SVG Example&quot; /&gt;
     &lt;figcaption class=&quot;mt subSize&quot;&gt;Here&amp;#8217;s an example of inline &lt;span class=&quot;caps&quot;&gt;SVG&lt;/span&gt; from this website.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -93,8 +93,8 @@
 
 </description>
         <pubDate>Thu, 18 Sep 2014 00:00:00 -0700</pubDate>
-        <link>http://www.jrdnbwmn.com/blog/using-svg</link>
-        <guid isPermaLink="true">http://www.jrdnbwmn.com/blog/using-svg</guid>
+        <link>http://jrdnbwmn.github.com/blog/using-svg</link>
+        <guid isPermaLink="true">http://jrdnbwmn.github.com/blog/using-svg</guid>
         
         
         <category>media</category>
