@@ -10,7 +10,7 @@
 
         <title>
             
-                Example&nbsp;post | Jordan Bowman
+                Using&nbsp;SVG | Jordan Bowman
             
         </title>
     
@@ -33,7 +33,7 @@
         <link rel="shortcut icon" href="/dist/img/2014/favicon.png">
     
         <!-- Canonical -->
-        <link rel="canonical" href="http://www.jrdnbwmn.com/blog/example-post">
+        <link rel="canonical" href="http://www.jrdnbwmn.com/blog/using-svg">
     
         <!-- RSS -->
         <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
@@ -61,148 +61,90 @@
     
 </header>
 
-                <h2 class="mb txt-center">Example&nbsp;post</h2>
-<p class="mb2 sansSerif subSize txt-gray txt-center">6th September 2014</p>
+                <h2 class="mb txt-center">Using&nbsp;SVG</h2>
+<p class="mb2 sansSerif subSize txt-gray txt-center">18th September 2014</p>
 <hr class="hr hr-small mb2">
 
-<div class="message">
-  Howdy! This is an example blog post that shows several types of <span class="caps">HTML</span> content supported in this&nbsp;theme.
-</div>
+<p>I went to a conference recently where one of the speakers talked about using SVGs. I asked a few of my fellow front-enders there if they used SVGs and everyone said, “Not&nbsp;really.” </p>
 
-<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet&nbsp;fermentum.</p>
+<p>Not&nbsp;really? </p>
 
-<blockquote>
-  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id&nbsp;elit.</p>
-</blockquote>
+<p>SVGs have some incredible, totally unique features,&nbsp;like:</p>
 
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed&nbsp;consectetur.</p>
-
-<h2 id="inline-html-elements">Inline <span class="caps">HTML</span>&nbsp;elements</h2>
-
-<p><span class="caps">HTML</span> defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-
-<ul>
-  <li><strong>To bold text</strong>, use&nbsp;<code>&lt;strong&gt;</code>.</li>
-  <li><em>To italicize text</em>, use&nbsp;<code>&lt;em&gt;</code>.</li>
-  <li>Abbreviations, like <abbr title="HyperText Markup Langage"><span class="caps">HTML</span></abbr> should use <code>&lt;abbr&gt;</code>, with an optional <code>title</code> attribute for the full&nbsp;phrase.</li>
-  <li>Citations, like <cite>— Mark otto</cite>, should use&nbsp;<code>&lt;cite&gt;</code>.</li>
-  <li><del>Deleted</del> text should use <code>&lt;del&gt;</code> and <ins>inserted</ins> text should use&nbsp;<code>&lt;ins&gt;</code>.</li>
-  <li>Superscript <sup>text</sup> uses <code>&lt;sup&gt;</code> and subscript <sub>text</sub> uses&nbsp;<code>&lt;sub&gt;</code>.</li>
+<ul class="list">
+    <li>Small, efficient file sizes (especially when you consider it scales to any size) that compress&nbsp;well.</li>
+    <li>Crystal clarity at any size, on any device, including retina devices. That also makes it a little more&nbsp;accessible. </li>
+    <li>Stylability via&nbsp;<span class="caps">CSS.</span></li>
 </ul>
 
-<p>Most of these elements are styled by browsers with few modifications on our&nbsp;part.</p>
+<p>So you might be thinking, “Okay, sounds pretty cool but I bet it doesn’t work in every browser.”&nbsp;Actually…</p>
 
-<h2 id="heading">Heading</h2>
+<figure class="img-breakout">
+    <img src="/dist/img/2014/September/svgcaniuse.png" alt="SVG Support" />
+    <figcaption class="mt">From caniuse.com</figcaption>
+</figure>
 
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at&nbsp;eros.</p>
+<p>It’s supported in every major browser (<span class="caps">IE</span> 9+) and has been for quite a while. If you have to go <span class="caps">IE</span> 8 and below or Android <span class="caps">2.3</span>  and below, you can use some pretty simple <a class="link" href="http://css-tricks.com/svg-fallbacks/">fallbacks</a> or something like <a class="link" href="https://github.com/jonathantneal/svg4everybody"><span class="caps">SVG</span> for Everybody</a>.</p>
 
-<h3 id="code">Code</h3>
+<p>“Well then it’s probably more difficult to&nbsp;use.”</p>
 
-<p>Cum sociis natoque penatibus et magnis dis <code>code element</code> montes, nascetur ridiculus&nbsp;mus.</p>
+<p>Nay, I say! You can use it exactly like any other image&nbsp;type:</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
+<pre class="codeBlock">
+<span class="code-blue">&lt;img</span> <span class="code-green">src=</span><span class="code-red">“image.svg”</span><span class="code-blue">&gt;</span>
+</pre>
 
-<span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;return a + b&quot;</span><span class="p">);</span>
+<p>or </p>
 
-<span class="c1">// Call the function</span>
-<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<span class="c1">// &gt; 8</span></code></pre></div>
+<pre class="codeBlock">
+<span class="code-red">.thing</span> {
+    <span class="code-purple">background</span>: <span class="code-green">url</span>(<span class="code-green">image.svg</span>);
+}
+</pre>
 
-<p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum&nbsp;massa.</p>
+<p>That works just like you’d expect. I’ll go into more advanced usage in a&nbsp;minute.</p>
 
-<h3 id="gists-via-github-pages">Gists via GitHub&nbsp;Pages</h3>
+<p>“Yeah, but SVGs will never replace raster&nbsp;images.”</p>
 
-<p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio&nbsp;dui.</p>
+<p>That is right in some cases, of course. You can’t make a photograph using <span class="caps">SVG</span>, for instance. SVGs are good for things like icons, illustrations, logos, charts, etc. which are a lot of what we do on the web. In fact, SVGs were actually designed for the&nbsp;web.</p>
 
-<script src="https://gist.github.com/5555251.js?file=gist.md"> </script>
+<h3 id="making-svgs-to-use-on-the-web">Making SVGs to use on the&nbsp;web</h3>
+<p>Open an <span class="caps">SVG</span> in a text editor and you’ll see lines of code that look like <span class="caps">HTML.</span> If you’re a math/geometry genius you can learn to how make SVGs with code if you want, but I’m not, so I use&nbsp;Illustrator.</p>
 
-<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod&nbsp;semper.</p>
+<p>You can make an <span class="caps">SVG</span> out of anything that’s vector (.ai, .eps, .pdf, .somethingelse). Just put it in Illustrator or Sketch and “save as” an&nbsp;<span class="caps">SVG.</span></p>
 
-<h3 id="lists">Lists</h3>
+<figure class="img-breakout">
+    <img src="/dist/img/2014/September/saving_svgs.png" alt="Saving SVGs" />
+    <figcaption class="mt"><span class="caps">SVG</span> <span class="caps">1.1</span> is best, and be sure to uncheck “Preserve Illustrator editing capabilities&#8221; to decrease the file size.</figcaption>
+</figure>
 
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet&nbsp;risus.</p>
+<p>You can also run the file through image optimization to reduce the size even more and clean things up. I use <a class="link" href="https://github.com/eatapear/gulp">Gulp</a>, so I just use the <a class="link" href="https://github.com/sindresorhus/gulp-imagemin">imagemin</a> plugin for all images, including SVGs. Or, you can use something like <a class="link" href="http://petercollingridge.appspot.com/svg-editor"><span class="caps">SVG</span> Editor</a>.</p>
 
-<ul>
-  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur&nbsp;et.</li>
-  <li>Donec id elit non mi porta gravida at eget&nbsp;metus.</li>
-  <li>Nulla vitae elit libero, a pharetra&nbsp;augue.</li>
+<p><a class="link" href="https://icomoon.io/">IcoMoon</a> is golden for working with SVGs, especially if you’re making something like a set of icons. You can drag and drop your own SVGs into the tool or use theirs. It’ll create an <span class="caps">SVG</span> sprite, and even give you an example of how to use it in&nbsp;<span class="caps">HTML.</span></p>
+
+<h3 id="inline-svgs">Inline&nbsp;SVGs</h3>
+<p>There’s nothing wrong with using the <span class="caps">HTML</span> image tag, but you can also make use of “inline”&nbsp;SVGs. </p>
+
+<p>Since SVGs are just code, you can actually take that code and place it right into your <span class="caps">HTML</span> document. Open the <span class="caps">SVG</span> in a text editor, copy the code you see, and paste that code where you want the <span class="caps">SVG</span> to show&nbsp;up.</p>
+
+<figure class="img-aside">
+    <img src="/dist/img/2014/September/inline_svg.png" alt="Inline SVG Example" />
+    <figcaption class="mt subSize">Here&#8217;s an example of inline <span class="caps">SVG</span> from this website.</figcaption>
+</figure>
+
+<p>Why would you want to do this? There’s a couple cool things about inline SVGs: One of the biggest things for me is that you get the exact same image except there’s no additional <span class="caps">HTTP</span> request. Performance&nbsp;happiness.</p>
+
+<p>Another thing is that you can <a class="link" href="http://css-tricks.com/svg-tabs-using-svg-shape-template/">define the <span class="caps">SVG</span> once</a> and then use it anywhere else again without pasting the same block code (or just use IcoMoon to automate that). That’s so much <a class="link" href="http://css-tricks.com/icon-fonts-vs-svg/">better than an icon font</a>.</p>
+
+<p>A lot of improved <a class="link" href="http://snapsvg.io/">animations</a> and control come with inline SVGs, too, like the fact that you can <a class="link" href="http://codepen.io/chriscoyier/pen/evcBu">target precise pieces</a> of the image with&nbsp;<span class="caps">CSS.</span></p>
+
+<h4 id="related-stuff">Related&nbsp;stuff</h4>
+<ul class="list">
+    <li><span class="caps">CSS</span> Tricks: <a class="link" href="http://css-tricks.com/mega-list-svg-information/">Compendium of <span class="caps">SVG</span>&nbsp;Info</a></li>
+    <li>Free Illustrator/Sketch alternative: <a class="link" href="http://inkscape.org/en/">Inkscape</a></li>
+    <li><a class="link" href="https://developer.mozilla.org/en-US/docs/Web/SVG"><span class="caps">SVG</span> on&nbsp;<span class="caps">MDN</span></a></li>
 </ul>
 
-<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra&nbsp;augue.</p>
-
-<ol>
-  <li>Vestibulum id ligula porta felis euismod&nbsp;semper.</li>
-  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus&nbsp;mus.</li>
-  <li>Maecenas sed diam eget risus varius blandit sit amet non&nbsp;magna.</li>
-</ol>
-
-<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at&nbsp;lobortis.</p>
-
-<dl>
-  <dt>HyperText Markup Language&nbsp;(<span class="caps">HTML</span>)</dt>
-  <dd>The language used to describe and define the content of a Web&nbsp;page</dd>
-
-  <dt>Cascading Style Sheets&nbsp;(<span class="caps">CSS</span>)</dt>
-  <dd>Used to describe the appearance of Web&nbsp;content</dd>
-
-  <dt>JavaScript&nbsp;(<span class="caps">JS</span>)</dt>
-  <dd>The programming language used to build advanced Web sites and&nbsp;applications</dd>
-</dl>
-
-<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu&nbsp;leo.</p>
-
-<h3 id="images">Images</h3>
-
-<p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit&nbsp;at.</p>
-
-<p><img src="http://placehold.it/800x400" alt="placeholder" title="Large example image" />
-<img src="http://placehold.it/400x200" alt="placeholder" title="Medium example image" />
-<img src="http://placehold.it/200x200" alt="placeholder" title="Small example image" /></p>
-
-<h3 id="tables">Tables</h3>
-
-<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing&nbsp;elit.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu&nbsp;leo.</p>
-
-<hr />
-
-<p>Want to see something else added? <a href="https://github.com/poole/poole/issues/new">Open an&nbsp;issue.</a></p>
 
 
 
