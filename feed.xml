@@ -15,15 +15,9 @@
 
 &lt;p&gt;Not&amp;nbsp;really? &lt;/p&gt;
 
-&lt;p&gt;SVGs have some incredible, totally unique features,&amp;nbsp;like:&lt;/p&gt;
+&lt;p&gt;SVGs have some incredible, totally unique features, like small, efficient file sizes (especially when you consider it scales to any size) that compress well; crystal clarity at any size, on any device, including retina devices; and stylability via&amp;nbsp;&lt;span class=&quot;caps&quot;&gt;CSS.&lt;/span&gt;&lt;/p&gt;
 
-&lt;ul class=&quot;list&quot;&gt;
-    &lt;li&gt;Small, efficient file sizes (especially when you consider it scales to any size) that compress&amp;nbsp;well.&lt;/li&gt;
-    &lt;li&gt;Crystal clarity at any size, on any device, including retina devices. That also makes it a little more&amp;nbsp;accessible. &lt;/li&gt;
-    &lt;li&gt;Stylability via&amp;nbsp;&lt;span class=&quot;caps&quot;&gt;CSS.&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So you might be thinking, “Okay, sounds pretty cool but I bet it doesn’t work in every browser.”&amp;nbsp;Actually…&lt;/p&gt;
+&lt;p&gt;So you might be thinking, “Okay but I bet it doesn’t work in every browser.”&amp;nbsp;Actually…&lt;/p&gt;
 
 &lt;figure class=&quot;img-breakout&quot;&gt;
     &lt;img src=&quot;http://www.jrdnbwmn.com/dist/img/2014/September/svgcaniuse.png&quot; alt=&quot;SVG Support&quot; /&gt;
