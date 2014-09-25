@@ -10,7 +10,7 @@
     
     
       <item>
-        <title>Things to Know About the Button&amp;nbsp;Element</title>
+        <title>Things to Know About the Button Element</title>
         <description>&lt;h3 id=&quot;problems-in-firefox&quot;&gt;Problems in&amp;nbsp;Firefox&lt;/h3&gt;
 &lt;p&gt;Firefox applies a &lt;code class=&quot;inlineCode&quot;&gt;line-height&lt;/code&gt; to &lt;code class=&quot;inlineCode&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt;s that are assigned a submit or button type&lt;sup&gt;&lt;a class=&quot;link&quot; href=&quot;#fn:1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. This cannot be overridden with custom &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;&lt;sup&gt;&lt;a class=&quot;link&quot; href=&quot;#fn:2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
 
@@ -65,7 +65,7 @@
       </item>
     
       <item>
-        <title>Using&amp;nbsp;SVG</title>
+        <title>Using SVG</title>
         <description>&lt;p&gt;I went to a conference recently where one of the speakers talked about using SVGs. I asked a few of my fellow front-enders there if they used SVGs and everyone said, “Not&amp;nbsp;really.” &lt;/p&gt;
 
 &lt;p&gt;Not&amp;nbsp;really? &lt;/p&gt;
