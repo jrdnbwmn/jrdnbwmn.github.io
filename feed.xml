@@ -10,6 +10,61 @@
     
     
       <item>
+        <title>Things to Know About the Button&amp;nbsp;Element</title>
+        <description>&lt;h3 id=&quot;problems-in-firefox&quot;&gt;Problems in&amp;nbsp;Firefox&lt;/h3&gt;
+&lt;p&gt;Firefox applies a &lt;code class=&quot;inlineCode&quot;&gt;line-height&lt;/code&gt; to &lt;code class=&quot;inlineCode&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt;s that are assigned a submit or button type&lt;sup&gt;&lt;a class=&quot;link&quot; href=&quot;#fn:1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. This cannot be overridden with custom &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;&lt;sup&gt;&lt;a class=&quot;link&quot; href=&quot;#fn:2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
+
+&lt;p&gt;To deal with this, you can either use &lt;code class=&quot;inlineCode&quot;&gt;&amp;lt;button&amp;gt;&lt;/code&gt; elements, or not use &lt;code class=&quot;inlineCode&quot;&gt;line-height&lt;/code&gt; on your &lt;code class=&quot;inlineCode&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt;s, in which case you’d need to use only &lt;code class=&quot;inlineCode&quot;&gt;padding&lt;/code&gt; to vertically align&amp;nbsp;text.&lt;/p&gt;
+
+&lt;h4 id=&quot;inner-outline&quot;&gt;Inner&amp;nbsp;outline&lt;/h4&gt;
+&lt;p&gt;Firefox also adds an &lt;a class=&quot;link&quot; href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#Notes&quot;&gt;inner outline&lt;/a&gt; to &lt;code class=&quot;inlineCode&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt;s and &lt;code class=&quot;inlineCode&quot;&gt;&amp;lt;button&amp;gt;&lt;/code&gt;s on &lt;code class=&quot;inlineCode&quot;&gt;:focus&lt;/code&gt;. To remove this, you can use the same &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; that Pear&lt;sup&gt;&lt;a class=&quot;link&quot; href=&quot;#fn:3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; uses:&lt;/p&gt;
+
+&lt;pre class=&quot;codeBlock&quot;&gt;
+&lt;span class=&quot;code-red&quot;&gt;input&lt;/span&gt;::-moz-&lt;span class=&quot;code-red&quot;&gt;focus-inner&lt;/span&gt;,
+&lt;span class=&quot;code-red&quot;&gt;button&lt;/span&gt;::-moz-&lt;span class=&quot;code-red&quot;&gt;focus-inner&lt;/span&gt; {
+    &lt;span class=&quot;code-purple&quot;&gt;padding&lt;/span&gt;: &lt;span class=&quot;code-blue&quot;&gt;0&lt;/span&gt;;
+    &lt;span class=&quot;code-purple&quot;&gt;border&lt;/span&gt;: &lt;span class=&quot;code-blue&quot;&gt;0&lt;/span&gt;;
+}
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;dont-use-values&quot;&gt;Don’t use&amp;nbsp;values&lt;/h3&gt;
+&lt;p&gt;This doesn’t seem to work well&amp;nbsp;everywhere:&lt;/p&gt;
+
+&lt;pre class=&quot;codeBlock&quot;&gt;
+&lt;span class=&quot;code-blue&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;code-green&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;code-red&quot;&gt;&amp;quot;submit&amp;quot;&lt;/span&gt; &lt;span class=&quot;code-green&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;code-red&quot;&gt;&amp;quot;Submit&amp;quot;&lt;/span&gt;&lt;span class=&quot;code-blue&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;code-blue&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;code-green&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;code-red&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt; &lt;span class=&quot;code-green&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;code-red&quot;&gt;&amp;quot;Cancel&amp;quot;&lt;/span&gt;&lt;span class=&quot;code-blue&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;but this works great (and personally, I like this syntax better&amp;nbsp;anyway):&lt;/p&gt;
+
+&lt;pre class=&quot;codeBlock&quot;&gt;
+&lt;span class=&quot;code-blue&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;code-green&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;code-red&quot;&gt;&amp;quot;submit&amp;quot;&lt;/span&gt;&lt;span class=&quot;code-blue&quot;&gt;&amp;gt;&lt;/span&gt;Submit&lt;span class=&quot;code-blue&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;code-blue&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;code-green&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;code-red&quot;&gt;&amp;quot;button&amp;quot;&lt;/span&gt;&lt;span class=&quot;code-blue&quot;&gt;&amp;gt;&lt;/span&gt;Cancel&lt;span class=&quot;code-blue&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;always-set-a-type&quot;&gt;Always set a&amp;nbsp;type&lt;/h3&gt;
+&lt;p&gt;The default type for &lt;code class=&quot;inlineCode&quot;&gt;&amp;lt;button&amp;gt;&lt;/code&gt; is  &lt;code class=&quot;inlineCode&quot;&gt;submit&lt;/code&gt;, so a button inside a form can submit the&amp;nbsp;form.&lt;/p&gt;
+
+&lt;p&gt;To avoid submitting the form or for buttons that are outside a form, use&amp;nbsp;&lt;code class=&quot;inlineCode&quot;&gt;type=&quot;button&quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;hr class=&quot;hr hr-small mt3 mb2&quot; /&gt;
+
+&lt;ol class=&quot;list list-aligned subSize&quot;&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;Looks like this &lt;a class=&quot;link&quot; href=&quot;https://bugzilla.mozilla.org/show_bug.cgi?id=697451#c43&quot;&gt;won&amp;#8217;t be the case&lt;/a&gt; in Firefox 30, but that doesn&amp;#8217;t fix the issue in older&amp;nbsp;versions.&lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;&lt;a class=&quot;link&quot; href=&quot;http://jsbin.com/yabek/4/&quot;&gt;Here&amp;#8217;s an example&lt;/a&gt;.&lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;&lt;a class=&quot;link&quot; href=&quot;https://github.com/eatapear/scss/blob/master/scss/_buttons.scss#L26-L31&quot;&gt;Here&lt;/a&gt; for buttons and &lt;a class=&quot;link&quot; href=&quot;https://github.com/eatapear/scss/blob/master/scss/_forms.scss#L39-L43&quot;&gt;here&lt;/a&gt; for&amp;nbsp;inputs.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate> 25 September 2014 </pubDate>
+        <link>http://www.jrdnbwmn.com/blog/things-to-know-button-element</link>
+        <guid isPermaLink="true">http://www.jrdnbwmn.com/blog/things-to-know-button-element</guid>
+        
+        
+        <category>html</category>
+        
+      </item>
+    
+      <item>
         <title>Using&amp;nbsp;SVG</title>
         <description>&lt;p&gt;I went to a conference recently where one of the speakers talked about using SVGs. I asked a few of my fellow front-enders there if they used SVGs and everyone said, “Not&amp;nbsp;really.” &lt;/p&gt;
 

@@ -10,7 +10,7 @@
 
         <title>
             
-                Blog | Jordan Bowman
+                Things to Know About the Button Element | Jordan Bowman
             
         </title>
     
@@ -33,7 +33,7 @@
         <link rel="shortcut icon" href="/img/2014/favicon.png">
     
         <!-- Canonical -->
-        <link rel="canonical" href="http://www.jrdnbwmn.com/blog/">
+        <link rel="canonical" href="http://www.jrdnbwmn.com/blog/things-to-know-button-element">
     
         <!-- RSS -->
         <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
@@ -61,20 +61,53 @@
     
 </header>
 
-                <h2 class="mb2 txt-center">Blog</h2>
+                <h2 class="mb txt-center">Things to Know About the Button Element</h2>
+<p class="mb2 sansSerif subSize txt-gray txt-center">25th September 2014</p>
 <hr class="hr hr-small mb2">
 
+<h3 id="problems-in-firefox">Problems in&nbsp;Firefox</h3>
+<p>Firefox applies a <code class="inlineCode">line-height</code> to <code class="inlineCode">&lt;input&gt;</code>s that are assigned a submit or button type<sup><a class="link" href="#fn:1">1</a></sup>. This cannot be overridden with custom <span class="caps">CSS</span><sup><a class="link" href="#fn:2">2</a></sup>. </p>
 
-<div class="txt-center mb2">
-<a class="link noBackground sansSerif" href="/blog/things-to-know-button-element"><span class="bold">Things to Know About the Button&nbsp;Element</span><br />
-<span class="subSize txt-gray">25th September&nbsp;2014</span></a>
-</div>
+<p>To deal with this, you can either use <code class="inlineCode">&lt;button&gt;</code> elements, or not use <code class="inlineCode">line-height</code> on your <code class="inlineCode">&lt;input&gt;</code>s, in which case you’d need to use only <code class="inlineCode">padding</code> to vertically align&nbsp;text.</p>
 
-<div class="txt-center mb2">
-<a class="link noBackground sansSerif" href="/blog/using-svg"><span class="bold">Using&nbsp;<span class="caps">SVG</span></span><br />
-<span class="subSize txt-gray">18th September&nbsp;2014</span></a>
-</div>
+<h4 id="inner-outline">Inner&nbsp;outline</h4>
+<p>Firefox also adds an <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#Notes">inner outline</a> to <code class="inlineCode">&lt;input&gt;</code>s and <code class="inlineCode">&lt;button&gt;</code>s on <code class="inlineCode">:focus</code>. To remove this, you can use the same <span class="caps">CSS</span> that Pear<sup><a class="link" href="#fn:3">3</a></sup> uses:</p>
 
+<pre class="codeBlock">
+<span class="code-red">input</span>::-moz-<span class="code-red">focus-inner</span>,
+<span class="code-red">button</span>::-moz-<span class="code-red">focus-inner</span> {
+    <span class="code-purple">padding</span>: <span class="code-blue">0</span>;
+    <span class="code-purple">border</span>: <span class="code-blue">0</span>;
+}
+</pre>
+
+<h3 id="dont-use-values">Don’t use&nbsp;values</h3>
+<p>This doesn’t seem to work well&nbsp;everywhere:</p>
+
+<pre class="codeBlock">
+<span class="code-blue">&lt;input</span> <span class="code-green">type=</span><span class="code-red">&quot;submit&quot;</span> <span class="code-green">value=</span><span class="code-red">&quot;Submit&quot;</span><span class="code-blue">&gt;</span>
+<span class="code-blue">&lt;input</span> <span class="code-green">type=</span><span class="code-red">&quot;button&quot;</span> <span class="code-green">value=</span><span class="code-red">&quot;Cancel&quot;</span><span class="code-blue">&gt;</span>
+</pre>
+
+<p>but this works great (and personally, I like this syntax better&nbsp;anyway):</p>
+
+<pre class="codeBlock">
+<span class="code-blue">&lt;button</span> <span class="code-green">type=</span><span class="code-red">&quot;submit&quot;</span><span class="code-blue">&gt;</span>Submit<span class="code-blue">&lt;/button&gt;</span>
+<span class="code-blue">&lt;button</span> <span class="code-green">type=</span><span class="code-red">&quot;button&quot;</span><span class="code-blue">&gt;</span>Cancel<span class="code-blue">&lt;/button&gt;</span>
+</pre>
+
+<h3 id="always-set-a-type">Always set a&nbsp;type</h3>
+<p>The default type for <code class="inlineCode">&lt;button&gt;</code> is  <code class="inlineCode">submit</code>, so a button inside a form can submit the&nbsp;form.</p>
+
+<p>To avoid submitting the form or for buttons that are outside a form, use&nbsp;<code class="inlineCode">type="button"</code>.</p>
+
+<hr class="hr hr-small mt3 mb2" />
+
+<ol class="list list-aligned subSize">
+    <li id="fn:1">Looks like this <a class="link" href="https://bugzilla.mozilla.org/show_bug.cgi?id=697451#c43">won&#8217;t be the case</a> in Firefox 30, but that doesn&#8217;t fix the issue in older&nbsp;versions.</li>
+    <li id="fn:2"><a class="link" href="http://jsbin.com/yabek/4/">Here&#8217;s an example</a>.</li>
+    <li id="fn:3"><a class="link" href="https://github.com/eatapear/scss/blob/master/scss/_buttons.scss#L26-L31">Here</a> for buttons and <a class="link" href="https://github.com/eatapear/scss/blob/master/scss/_forms.scss#L39-L43">here</a> for&nbsp;inputs.</li>
+</ol>
 
 
 
