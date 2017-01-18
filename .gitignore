@@ -50,3 +50,9 @@ nbproject
 
 ### Gulp/Node ###
 node_modules
+
+### Jekyll ###
+_site/
+.bundle/
+.jekyll-metadata
+Gemfile.lock
