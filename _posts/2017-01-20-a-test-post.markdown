@@ -6,3 +6,7 @@ tags:
 ---
 
 This is just to test things out.
+
+Here's a picture:
+
+![3kzlcl3rj8a-ricardo-gomez-angel.jpg](/uploads/3kzlcl3rj8a-ricardo-gomez-angel.jpg)
