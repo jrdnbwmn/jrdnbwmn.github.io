@@ -21,3 +21,4 @@ defaults:
   values:
     layout: page
 permalink: pretty
+exclude: [scss]
