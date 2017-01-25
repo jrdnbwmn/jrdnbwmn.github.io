@@ -36,10 +36,12 @@ print_hi('Tom')
 
 Check out the [Jekyll docs](http://jekyllrb.com) for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo](https://github.com/mojombo/jekyll).
 
-<figure class="embed">
+<div class="embed">
+<figure>
 <img src="/uploads/imgh2.jpg" alt="Default image">
 <figcaption>Robin <span class="italic">Hood Foundational</span> Library</figcaption>
 </figure>
+</div>
 
 The theory is that by employing these distinct elements, a developer can speed up their workflow and write code more efficiently because they’re not forced to repeat themselves. This much appears to be common sense. Essentially, what Brad calls for is object-oriented design, which has been discussed in numerous articles and blog posts recently. That isn’t really what interested me about the idea, though — it was the naming convention that Brad chose.
 
