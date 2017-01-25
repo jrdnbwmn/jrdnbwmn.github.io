@@ -43,11 +43,14 @@ Check out the [Jekyll docs](http://jekyllrb.com) for more info on how to get the
 
 The theory is that by employing these distinct elements, a developer can speed up their workflow and write code more efficiently because they’re not forced to repeat themselves. This much appears to be common sense. Essentially, what Brad calls for is object-oriented design, which has been discussed in numerous articles and blog posts recently. That isn’t really what interested me about the idea, though — it was the naming convention that Brad chose.
 
-<figure class="embed aside-image">
-  <img src="/uploads/imgv2.jpg" alt="Aside example">
-  <figcaption>This is a beautiful caption</figcaption>
-</figure>
+1. Here's a list item
+2. Maybe I'll add a second one...
+3. Whoa, a third?
 
 Although I had written some components with Sass early on in a project, I found that towards the end, I was simply incapable of remembering where in the stack I needed to make adjustments. This forced me to try to memorize where each block of code was and had me scurrying around, completely lost, even with the advanced search features of a great text editor.
+
+- This is a normal list
+- I guess I'll add another item
+- This is getting out of hand
 
 The theory is that by employing these distinct elements, a developer can speed up their workflow and write code more efficiently because they’re not forced to repeat themselves. This much appears to be common sense. Essentially, what Brad calls for is object-oriented design, which has been discussed in numerous articles and blog posts recently. That isn’t really what interested me about the idea, though — it was the naming convention that Brad chose.
