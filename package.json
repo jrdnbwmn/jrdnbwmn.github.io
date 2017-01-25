@@ -1,8 +1,8 @@
 {
-    "name": "pear-gulp",
+    "name": "my-site",
     "version": "0.1.0",
     "author": "Jordan Bowman",
-    "description": "This is a Gulp boilerplate that is part of the Pear front-end kit",
+    "description": "This is for the Gulp used on my website",
     "private": true,
     "devDependencies": {
         "browser-sync": "*",
@@ -12,15 +12,12 @@
         "gulp-clean-css": "*",
         "gulp-combine-mq": "*",
         "gulp-concat": "*",
-        "gulp-file-include": "*",
-        "gulp-htmlmin": "*",
         "gulp-imagemin": "*",
         "gulp-plumber": "*",
         "gulp-rename": "*",
         "gulp-sass": "*",
         "gulp-size": "*",
         "gulp-uglify": "*",
-        "gulp-uncss": "*",
         "gulp-util": "*",
         "gulp-watch": "*"
     }
