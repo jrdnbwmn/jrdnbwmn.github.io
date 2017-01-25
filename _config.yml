@@ -1,7 +1,5 @@
 ---
 title: Jordan Bowman
-author: Jordan Bowman
-description: Jordan Bowman is a Denver–based web designer and engineer.
 timezone: America/Denver
 collections:
   posts:
@@ -22,8 +20,10 @@ defaults:
     type: pages
   values:
     layout: page
+author: Jordan Bowman
+description: Jordan Bowman is a Denver–based web designer and engineer.
 permalink: pretty
-incremental: yes
+incremental: true
 exclude:
 - Gemfile
 - Gemfile.lock
