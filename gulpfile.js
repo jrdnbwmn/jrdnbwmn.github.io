@@ -35,25 +35,19 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-/**
- * Build the Jekyll Site
- */
+// Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
     return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
-/**
- * Rebuild Jekyll & do page reload
- */
+// Rebuild Jekyll & do page reload
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
     browserSync.reload();
 });
 
-/**
- * Wait for jekyll-build, then launch the Server
- */
+// Wait for jekyll-build, then launch the Server
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
         server: {
@@ -101,7 +95,7 @@ var onError = function(error) {
 // Watch
 gulp.task('watch', function () {
     // Watch scss files
-    gulp.watch('_scss/*.scss', ['sass']);
+    gulp.watch('scss/*.scss', ['sass']);
     // Watch html/md files, run jekyll & reload browser-sync
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });

@@ -1,3 +1,3 @@
 ## Notes
 
-I build my sass locally with Gulp and then include the final CSS file with the conversion.
+I develop locally using Gulp. This includes compiling Sass locally and then only including the resultant CSS file in the conversion.
