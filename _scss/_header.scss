@@ -1,0 +1,11 @@
+// Header
+// -------------------------------------------------------------------
+.header {
+  padding-left: $outside-mobile-margin;
+  padding-right: $outside-mobile-margin;
+
+  @media screen and (min-width: $breakpoint--md) {
+    padding-left: $space-3;
+    padding-right: $space-3;
+  }
+}

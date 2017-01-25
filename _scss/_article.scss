@@ -1,0 +1,67 @@
+// Text
+// -------------------------------------------------------------------
+.article p,
+.article p span,
+.article h1,
+.article h2,
+.article h3,
+.article h4 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-post-width;
+  width: 100%;
+    padding-right: $outside-mobile-margin;
+    padding-left: $outside-mobile-margin;
+
+    @media screen and (min-width: $breakpoint--md) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .article p,
+  .article p span {
+      font-family: $serif;
+  }
+
+.article ul, .article ol {
+    padding-right: $outside-mobile-margin;
+    padding-left: $baseline*6;
+
+    @media screen and (min-width: $breakpoint--md) {
+      padding-right: 0;
+      padding-left: $baseline*4;
+    }
+  }
+
+.article blockquote {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-post-width+($max-post-width/2);
+  padding: $space-1 $outside-mobile-margin;
+
+  p {
+      font-family: $sans-serif;
+  }
+
+  @media screen and (min-width: $breakpoint--md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.article figure.highlight {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-post-width;
+  padding: $space-1 $outside-mobile-margin;
+
+  span {
+      font-family: $monospace;
+  }
+
+  @media screen and (min-width: $breakpoint--md) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

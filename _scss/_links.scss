@@ -1,0 +1,35 @@
+// Normalization
+// -------------------------------------------------------------------
+// Improve readability when focused and also mouse hovered in all browsers.
+a:active, a:hover { outline: 0; }
+
+
+// Base styles
+// -------------------------------------------------------------------
+// Default styling, appliable to sections or specific elements
+article a,
+article a:link,
+article a:visited,
+.link,
+.link:link,
+.link:visited {
+  color: $text-color;
+  text-decoration: none;
+  transition: color $fade;
+  border-bottom: 2px solid $yellow;
+}
+
+article a:hover,
+article a:focus,
+.link:hover,
+.link:focus {
+  color: $yellow;
+}
+
+article a:active,
+.link:active {
+  background-image: none;
+  color: $yellow;
+  outline: 0;
+  transition: color $fade;
+}
