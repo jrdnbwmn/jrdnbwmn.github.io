@@ -48,7 +48,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 });
 
 // Wait for jekyll-build, then launch the Server
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['css', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -95,7 +95,7 @@ var onError = function(error) {
 // Watch
 gulp.task('watch', function () {
     // Watch scss files
-    gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('scss/*.scss', ['css']);
     // Watch html/md files, run jekyll & reload browser-sync
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
