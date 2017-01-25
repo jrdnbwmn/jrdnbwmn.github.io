@@ -1,12 +1,34 @@
 ---
+layout: post
 title: A test post
 date: 2017-01-20 20:25:00 -07:00
 tags:
 - cake
 ---
 
-This is just to test things out.
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2014-04-20 09:11:03
+categories: jekyll update
+---
 
-Here's a picture:
+You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
+To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+
+[jekyll-gh]: https://github.com/mojombo/jekyll
+[jekyll]:    http://jekyllrb.com
 
 ![3kzlcl3rj8a-ricardo-gomez-angel.jpg](/uploads/3kzlcl3rj8a-ricardo-gomez-angel.jpg)
