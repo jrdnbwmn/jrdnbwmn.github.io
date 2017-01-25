@@ -52,5 +52,6 @@ Although I had written some components with Sass early on in a project, I found 
 - This is a normal list
 - I guess I'll add another item
 - This is getting out of hand
+- Last one.
 
 The theory is that by employing these distinct elements, a developer can speed up their workflow and write code more efficiently because they’re not forced to repeat themselves. This much appears to be common sense. Essentially, what Brad calls for is object-oriented design, which has been discussed in numerous articles and blog posts recently. That isn’t really what interested me about the idea, though — it was the naming convention that Brad chose.
