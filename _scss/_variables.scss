@@ -1,25 +1,25 @@
 // Colors
 // -------------------------------------------------------------------
 // Grayscale
-$gray-base:               #788390 !default;
+$gray-base:               #8494a6 !default;
 
 $black:                   #000 !default;
 $darkest-gray:            darken($gray-base, 34%) !default;
 $dark-gray:               darken($gray-base, 17%) !default;
 $gray:                    $gray-base !default;
-$light-gray:              lighten($gray-base, 23%) !default;
-$lightest-gray:           lighten($gray-base, 40%) !default;
+$light-gray:              lighten($gray-base, 17%) !default;
+$lightest-gray:           lighten($gray-base, 34%) !default;
 $white:                   #fff !default;
 
 // Hues
 $blue:                    #428bca !default;
 $green:                   #6fbb57 !default;
-$yellow:                  #f4c763 !default;
+$orange:                  #f0ad4e !default;
 
 // Color scheme
 $primary-color:           $blue !default;
 $secondary-color:         $green !default;
-$tertiary-color:          $yellow !default;
+$tertiary-color:          $orange !default;
 
 
 // Baseline
@@ -30,11 +30,10 @@ $baseline:                .4rem !default;
 // Typography
 // -------------------------------------------------------------------
 // Font families
-$sans-serif:              "soleil", "Avenir Next", Avenir, Helvetica,
-                          Trebuchet, sans-serif !default;
-$serif:                   "freight-text-pro", Georgia, Times,
-                          serif !default;
-$monospace:               Menlo, Monaco, Andale Mono, Consolas,
+$sans-serif:              "Avenir Next", Avenir, Trebuchet, Verdana,
+                          sans-serif !default;
+$serif:                   Georgia, Times, serif !default;
+$monospace:               Monaco, Menlo, Consolas,
                           monospace !default;
 
 $font-family--base:       $sans-serif !default;
@@ -45,28 +44,28 @@ $font-family--code:       $monospace !default;
 
 // Type scale
 // Good tool: http://type-scale.com/
-$h1:                      1.728rem !default;
-$h2:                      1.44rem !default;
-$h3:                      1.2rem !default;
+$h1:                      2.369rem !default;
+$h2:                      1.777rem !default;
+$h3:                      1.333rem !default;
 $h4:                      1rem !default;
-$h5:                      .694rem !default;
-$h6:                      .694rem !default;
+$h5:                      .75rem !default;
+$h6:                      .75rem !default;
 
 // Finer control over type scale after certain breakpoint (off by default)
-$responsive-type:         true !default;
-$h1--desktop:             2.827rem !default;
-$h2--desktop:             1.999rem !default;
-$h3--desktop:             1.414rem !default;
+$responsive-type:         false !default;
+$h1--desktop:             2.369rem !default;
+$h2--desktop:             1.777rem !default;
+$h3--desktop:             1.333rem !default;
 $h4--desktop:             1rem !default;
-$h5--desktop:             .707rem !default;
-$h6--desktop:             .707rem !default;
+$h5--desktop:             .75rem !default;
+$h6--desktop:             .75rem !default;
 
 // Text color
 $text-color:              $dark-gray !default;
 
 // Text sizes
-$font-size--mobile:       18px !default;
-$font-size--desktop:      21px !default;
+$font-size--mobile:       14px !default;
+$font-size--desktop:      18px !default;
 $font-size--lg:           $h3 !default;
 $font-size--sm:           $h5 !default;
 
@@ -76,45 +75,47 @@ $font-weight--heading:    700 !default;
 
 // Line heights
 $line-height--base:       $baseline*4 !default;
-$line-height--heading:    1.2 !default;
-$line-height--sm:         $baseline*2 !default;
+$line-height--heading:    1 !default;
 
 
 // Layout
 // -------------------------------------------------------------------
 // Breakpoints
 // Mobile Safari has problems with rems being used in media queries
-$breakpoint--sm:          480px !default;
+$breakpoint--sm:          40em !default;
 $breakpoint--md:          50em !default;
-$breakpoint--lg:          1024px !default;
+$breakpoint--lg:          60em !default;
 
-// Max post width
-$max-post-width:          28rem !default;
+// Max container width
+$max-container-width:     30em !default;
 
 
 // Spaces
 // -------------------------------------------------------------------
-$space-1:                 $baseline !default;
-$space-2:                 $baseline*2 !default;
-$space-3:                 $baseline*4 !default;
-$space-4:                 $baseline*6 !default;
-$space-5:                 $baseline*8 !default;
+$space-1:                 $baseline*2 !default;
+$space-2:                 $baseline*5 !default;
+$space-3:                 $baseline*8 !default;
+$space-4:                 $baseline*11 !default;
 
 // Specific margins
 $p-mb:                    $space-2 !default;
-$heading-mb:              $space-1 !default;
+$heading-mb:              $p-mb !default;
 
-// Outside mobile margin
-$outside-mobile-margin:   $space-2 !default;
+
+// Links
+// -------------------------------------------------------------------
+// Link colors
+$link-color:              $primary-color !default;
+$link-hover-color:        darken($primary-color, 10%) !default;
+$active-link-color:       darken($primary-color, 25%) !default;
 
 
 // Code
 // -------------------------------------------------------------------
-$code-color:              $white !default;
-$code-bg-color:           $darkest-gray !default;
+// Code colors
+$code-color:              $dark-gray !default;
+$code-bg-color:           $lightest-gray !default;
 $code-padding:            $baseline*2 $baseline*2 !default;
-$font-size--code:         .8rem !default;
-$line-height--code:       $baseline*3 !default;
 
 
 // Tables
@@ -144,4 +145,4 @@ $border-width:            1px !default;
 
 // Animations
 // -------------------------------------------------------------------
-$fade:                    .1s ease-out !default;
+$fade:                    .2s ease-out !default;

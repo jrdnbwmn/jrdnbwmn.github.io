@@ -5,8 +5,8 @@ b, strong { line-height: inherit; }
 
 em,
 i {
-  font-style: italic;
-  line-height: inherit;
+    font-style: italic;
+    line-height: inherit;
 }
 
 // Undo browser default styling.
@@ -34,27 +34,20 @@ h6, .h6, small, .small { font-size: $h6; }
 
 // Finer control over type scale after certain breakpoint (off by default)
 @if ($responsive-type) {
-  @media screen and (min-width: $breakpoint--sm) {
-    h1, .h1                { font-size: $h1--desktop; }
-    h2, .h2                { font-size: $h2--desktop; }
-    h3, .h3                { font-size: $h3--desktop; }
-    h4, .h4,
-    p, ul, ol, dl          { font-size: $h4--desktop; }
-    h5, .h5                { font-size: $h5--desktop; }
-    h6, .h6, small, .small { font-size: $h6--desktop; }
-  }
+    @media screen and (min-width: $breakpoint--sm) {
+        h1, .h1                { font-size: $h1--desktop; }
+        h2, .h2                { font-size: $h2--desktop; }
+        h3, .h3                { font-size: $h3--desktop; }
+        h4, .h4,
+        p, ul, ol, dl          { font-size: $h4--desktop; }
+        h5, .h5                { font-size: $h5--desktop; }
+        h6, .h6, small, .small { font-size: $h6--desktop; }
+    }
 }
 
 
 // Base typography styles
 // -------------------------------------------------------------------
-// Font
-.text {
-  p, ul, ol {
-    font-family: $serif;
-  }
-}
-
 // Headings
 h1,
 h2,
@@ -62,20 +55,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-family--heading;
-  font-weight: $font-weight--heading;
-  line-height: $line-height--heading;
-  margin-top: 0;
-  margin-bottom: $heading-mb;
-  text-rendering: optimizeLegibility; // Enable ligatures and kerning
+    font-family: $font-family--heading;
+    font-weight: $font-weight--heading;
+    line-height: $line-height--heading;
+    margin-top: 0;
+    margin-bottom: $heading-mb;
+    text-rendering: optimizeLegibility; // Enable ligatures and kerning
 }
 
-h3 { font-weight: normal; }
-
-h6,
-h3 {
-  color: $light-gray;
-}
+h6 { color: $gray; }
 
 .h1,
 .h2,
@@ -83,53 +71,40 @@ h3 {
 .h4,
 .h5,
 .h6 {
-  line-height: $line-height--heading;
-  margin-bottom: $heading-mb;
+    line-height: $line-height--heading;
+    margin-bottom: $heading-mb;
 }
 
-// Paragraphs
+// Paragraph
 p { margin: 0 auto $p-mb auto; }
 
 // Small
 small,
 .small {
-  font-weight: normal;
-  line-height: 1;
+    font-weight: normal;
+    line-height: 1;
 }
 
 // A better looking default horizontal rule
 hr {
-  border: 0;
-  border-top: 1px solid $border-color;
-  display: block;
-  height: 1px;
+    border: 0;
+    border-top: 1px solid $border-color;
+    display: block;
+    height: 1px;
 }
 
 // Blockquote
-blockquote {
-  font-family: $sans-serif;
-  font-size: $font-size--lg;
-  font-weight: $font-weight--heading;
-  margin-bottom: $p-mb;
-  max-width: 100%; // Prevents it from breaking out of container
-  text-align: center;
+.blockquote {
+    border-left: 4px solid $border-color;
+    font-family: $sans-serif;
+    font-size: $font-size--lg;
+    font-style: italic;
+    max-width: 100%; // Prevents it from breaking out of container
+    margin-bottom: $p-mb;
+    padding-left: $baseline*3;
 }
 
-blockquote:before, blockquote:after {
-  background: $lightest-gray;
-  content: "";
-  display: block;
-  height: 3px;
-  width: 25%;
-}
-
-blockquote:before {
-  margin: 0 auto $space-3;
-}
-
-blockquote:after {
-  margin: $space-3 auto 0;
-}
+.blockquote:before, .blockquote:after { content: ""; }
 
 
 // Utilities
@@ -150,8 +125,6 @@ blockquote:after {
 .line-height--heading  { line-height: $line-height--heading; }
 
 // Font
-.sans-serif { font-family: $sans-serif; }
-
 .font--heading  { font-family: $font-family--heading }
 .font--reading  { font-family: $font-family--reading }
 .font--ui       { font-family: $font-family--ui }

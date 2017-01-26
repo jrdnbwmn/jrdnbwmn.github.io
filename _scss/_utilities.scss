@@ -25,6 +25,22 @@
 .inline-block { display: inline-block; }
 .inline       { display: inline; }
 
+// Some mobile utilities
+// `show-on-mobile` displays the element only on mobile devices
+// `mobile-block` makes the element go display block on mobile devices
+.show-on-mobile { display: none !important; }
+
+@media screen and (max-width: $breakpoint--sm) {
+    .show-on-mobile,
+    .block-on-mobile {
+        display: block !important;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
 
 // Layout utilities
 // -------------------------------------------------------------------
@@ -37,15 +53,15 @@
 .fit        { max-width: 100%; }
 
 .clearfix {
-  *zoom:1;
+    *zoom:1;
 
-  &:before,
-  &:after {
-    content: "";
-    display: table;
-  }
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
 
-  &:after {
-    clear: both;
-  }
+    &:after {
+        clear: both;
+    }
 }
