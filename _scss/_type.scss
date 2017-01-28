@@ -56,18 +56,21 @@ h4,
 h5,
 h6 {
     font-family: $font-family--heading;
-    font-weight: $font-weight--heading;
+    font-weight: $font-weight--bold;
     line-height: $line-height--heading;
     margin-top: 0;
     margin-bottom: $heading-mb;
     text-rendering: optimizeLegibility; // Enable ligatures and kerning
 }
 
+h2 {
+    margin-bottom: $space-1/2;
+}
+
 h6 { color: $gray; }
 
 .h1,
 .h2,
-.h3,
 .h4,
 .h5,
 .h6 {

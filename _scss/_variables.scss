@@ -1,14 +1,14 @@
 // Colors
 // -------------------------------------------------------------------
 // Grayscale
-$gray-base:               #8494a6 !default;
+$gray-base:               #868c93 !default;
 
 $black:                   #000 !default;
 $darkest-gray:            darken($gray-base, 34%) !default;
 $dark-gray:               darken($gray-base, 17%) !default;
 $gray:                    $gray-base !default;
-$light-gray:              lighten($gray-base, 17%) !default;
-$lightest-gray:           lighten($gray-base, 34%) !default;
+$light-gray:              lighten($gray-base, 23%) !default;
+$lightest-gray:           lighten($gray-base, 40%) !default;
 $white:                   #fff !default;
 
 // Hues
@@ -44,21 +44,21 @@ $font-family--code:       $monospace !default;
 
 // Type scale
 // Good tool: http://type-scale.com/
-$h1:                      2.369rem !default;
-$h2:                      1.777rem !default;
-$h3:                      1.333rem !default;
+$h1:                      1.953rem !default;
+$h2:                      1.563rem !default;
+$h3:                      1.25rem !default;
 $h4:                      1rem !default;
-$h5:                      .75rem !default;
-$h6:                      .75rem !default;
+$h5:                      .8rem !default;
+$h6:                      .8rem !default;
 
 // Finer control over type scale after certain breakpoint (off by default)
 $responsive-type:         false !default;
-$h1--desktop:             2.369rem !default;
-$h2--desktop:             1.777rem !default;
-$h3--desktop:             1.333rem !default;
+$h1--desktop:             1.953rem !default;
+$h2--desktop:             1.563rem !default;
+$h3--desktop:             1.25rem !default;
 $h4--desktop:             1rem !default;
-$h5--desktop:             .75rem !default;
-$h6--desktop:             .75rem !default;
+$h5--desktop:             .8rem !default;
+$h6--desktop:             .8rem !default;
 
 // Text color
 $text-color:              $dark-gray !default;
@@ -71,11 +71,11 @@ $font-size--sm:           $h5 !default;
 
 // Weights
 $font-weight--base:       400 !default;
-$font-weight--heading:    700 !default;
+$font-weight--bold:       700 !default;
 
 // Line heights
 $line-height--base:       $baseline*4 !default;
-$line-height--heading:    1 !default;
+$line-height--heading:    1.2 !default;
 
 
 // Layout
@@ -87,7 +87,7 @@ $breakpoint--md:          50em !default;
 $breakpoint--lg:          60em !default;
 
 // Max container width
-$max-container-width:     30em !default;
+$max-container-width:     55rem !default;
 
 
 // Spaces
@@ -98,7 +98,7 @@ $space-3:                 $baseline*8 !default;
 $space-4:                 $baseline*11 !default;
 
 // Specific margins
-$p-mb:                    $space-2 !default;
+$p-mb:                    $space-1+($space-1/2) !default;
 $heading-mb:              $p-mb !default;
 
 

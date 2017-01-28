@@ -33,3 +33,27 @@ svg { max-height: 100%; }
 // -------------------------------------------------------------------
 // Make stuff responsive
 img, canvas, iframe, video, svg { max-width: 100%; }
+
+.embed figcaption {
+    max-width: 38rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $space-1;
+    padding-right: $space-1;
+}
+
+.post figcaption {
+    margin-top: $space-1/2;
+}
+
+.embed--offset {
+    float: left;
+    width: 100%;
+    max-width: none;
+
+    @media screen and (min-width: $breakpoint--sm) {
+        max-width: 20rem;
+        margin-right: $space-2;
+        margin-bottom: $space-2;
+    }
+}

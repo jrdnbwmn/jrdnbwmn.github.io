@@ -3,16 +3,16 @@ title: Kiwi jam overfilled gaps in the quartz crystal box
 date: 2017-01-20 20:25:00 -07:00
 tags:
 - cake
-layout: article
+layout: post
 ---
 
 The theory is that by employing these distinct elements, a developer can speed up their workflow and write code more efficiently because they’re not forced to repeat themselves. This much appears to be common sense. Essentially, what Brad calls for is object-oriented design, which has been discussed in numerous articles and blog posts recently. That isn’t really what interested me about the idea, though — it was the naming convention that Brad chose.
 
 Whenever I try to add a component to an old website, I have to figure out the mental model of the relationships between elements. I have to wonder how removing a portion of the website would affect another totally [unrelated thing](http://www.google.com) elsewhere. This could be a background color or margins or padding or even the order of elements in a module (such as an image in a comments section combined with text from the same object).
 
-<div class="embed inline-image">
+<div class="embed--offset">
 <figure>
-<img src="https://unsplash.imgix.net/photo-1423882503395-8571951e45cc?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="Inline Image">
+<img src="/uploads/imgh1.jpg" alt="Inline Image">
 <figcaption>Here's another caption</figcaption>
 </figure>
 </div>
