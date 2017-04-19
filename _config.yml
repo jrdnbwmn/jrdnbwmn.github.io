@@ -1,0 +1,33 @@
+---
+title: Jordan Bowman
+timezone: America/Denver
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+author: Jordan Bowman
+description: Jordan Bowman is a Denver–based web designer and engineer.
+permalink: pretty
+incremental: true
+exclude:
+- Gemfile
+- Gemfile.lock
+- gulpfile.js
+- package.json
+- node_modules
+- _scss
