@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="171px" height="153px" viewBox="0 0 171 153" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>Slice 1</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="redesign" transform="translate(1.000000, 1.000000)" stroke="#4D4B50" stroke-width="2.5">
-            <path d="M162.5,150.5 L6.5,150.5 C3.3,150.5 0.6,147.9 0.6,144.6 L0.6,6.5 C0.6,3.3 3.2,0.6 6.5,0.6 L162.4,0.6 C165.6,0.6 168.3,3.2 168.3,6.5 L168.3,144.6 C168.3,147.9 165.7,150.5 162.5,150.5 Z M0.7,19 L0.7,6.4 C0.7,3.2 3.3,0.5 6.6,0.5 L162.5,0.5 C165.7,0.5 168.4,3.1 168.4,6.4 L168.4,19 L0.7,19 Z" id="Shape"></path>
-            <circle id="Oval" cx="11.3" cy="9.8" r="3"></circle>
-            <circle id="Oval" cx="23" cy="9.8" r="3"></circle>
-            <circle id="Oval" cx="34.7" cy="9.8" r="3"></circle>
-            <g id="Group" transform="translate(49.000000, 49.000000)">
-                <path d="M8.7,35.5 C8.7,22.3 18.1,10.9 31.1,8.4 L29.6,0.5 C12.9,3.7 0.7,18.4 0.7,35.4 C0.7,44.9 4.4,53.8 11.1,60.5 L5.1,66.5 L25,68.3 L22.9,48.7 L16.8,54.8 C11.6,49.8 8.7,42.9 8.7,35.5 L8.7,35.5 Z M62.3,34.8 C62.3,48 52.9,59.4 39.9,61.9 L41.4,69.8 C58.1,66.6 70.3,51.9 70.3,34.9 C70.3,25.4 66.6,16.5 59.9,9.8 L65.9,3.8 L46,1.9 L48.1,21.5 L54.2,15.4 C59.4,20.5 62.3,27.4 62.3,34.8 L62.3,34.8 Z" id="Shape"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 155" enable-background="new 0 0 175 155"><path stroke="#4D4B50" stroke-width="2.5" stroke-miterlimit="10" d="M165.5 152.5H9.5c-3.2 0-5.9-2.6-5.9-5.9V8.5c0-3.2 2.6-5.9 5.9-5.9h155.9c3.2 0 5.9 2.6 5.9 5.9v138.1c0 3.3-2.6 5.9-5.8 5.9zM3.7 21V8.4c0-3.2 2.6-5.9 5.9-5.9h155.9c3.2 0 5.9 2.6 5.9 5.9V21H3.7z" fill="none"/><circle stroke="#4D4B50" stroke-width="2.5" stroke-miterlimit="10" cx="14.3" cy="11.8" r="3" fill="none"/><circle stroke="#4D4B50" stroke-width="2.5" stroke-miterlimit="10" cx="26" cy="11.8" r="3" fill="none"/><circle stroke="#4D4B50" stroke-width="2.5" stroke-miterlimit="10" cx="37.7" cy="11.8" r="3" fill="none"/><g stroke="#4D4B50" stroke-width="2.5" stroke-miterlimit="10" fill="none"><path d="M60.7 86.5c0-13.2 9.4-24.6 22.4-27.1l-1.5-7.9c-16.7 3.2-28.9 17.9-28.9 34.9 0 9.5 3.7 18.4 10.4 25.1l-6 6 19.9 1.8-2.1-19.6-6.1 6.1c-5.2-5-8.1-11.9-8.1-19.3zM114.3 85.8c0 13.2-9.4 24.6-22.4 27.1l1.5 7.9c16.7-3.2 28.9-17.9 28.9-34.9 0-9.5-3.7-18.4-10.4-25.1l6-6L98 52.9l2.1 19.6 6.1-6.1c5.2 5.1 8.1 12 8.1 19.4z"/></g></svg>
