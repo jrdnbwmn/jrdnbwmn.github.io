@@ -52,6 +52,12 @@
     }
 }
 
+.full-on-mobile {
+    @media screen and (max-width: $breakpoint--sm) {
+        width: 100%;
+    }
+}
+
 
 // Layout utilities
 // -------------------------------------------------------------------
