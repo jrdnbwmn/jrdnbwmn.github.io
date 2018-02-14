@@ -45,15 +45,15 @@ $font-family--code:       $monospace !default;
 
 // Type scale
 // Good tool: http://type-scale.com/
-$h1:                      2.5rem !default;
+$h1:                      1.8rem !default;
 $h2:                      1.85rem !default;
-$h3:                      1.5rem !default;
-$h4:                      1rem !default;
+$h3:                      1.2rem !default;
+$h4:                      .9rem !default;
 $h5:                      .75rem !default;
 $h6:                      .75rem !default;
 
 // Finer control over type scale after certain breakpoint (off by default)
-$responsive-type:         false !default;
+$responsive-type:         true !default;
 $h1--desktop:             2.5rem !default;
 $h2--desktop:             1.85rem !default;
 $h3--desktop:             1.5rem !default;
