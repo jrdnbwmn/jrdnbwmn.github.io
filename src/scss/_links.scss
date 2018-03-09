@@ -8,7 +8,7 @@
 .link:link,
 .link:visited {
     color: $link-color;
-    text-decoration: underline;
+    text-decoration: none;
     transition: color $fade;
 }
 
@@ -17,7 +17,7 @@
 .link:hover,
 .link:focus {
     color: $link-hover-color;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .default-links a:active,

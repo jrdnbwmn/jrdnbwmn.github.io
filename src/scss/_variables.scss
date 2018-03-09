@@ -56,7 +56,7 @@ $h6:                      .75rem !default;
 $responsive-type:         true !default;
 $h1--desktop:             2.5rem !default;
 $h2--desktop:             1.85rem !default;
-$h3--desktop:             1.5rem !default;
+$h3--desktop:             1.35rem !default;
 $h4--desktop:             1rem !default;
 $h5--desktop:             .75rem !default;
 $h6--desktop:             .75rem !default;
@@ -66,7 +66,7 @@ $text-color:              $darkest-gray !default;
 
 // Text sizes
 $font-size--mobile:       16px !default;
-$font-size--desktop:      17px !default;
+$font-size--desktop:      19px !default;
 $font-size--lg:           $h3 !default;
 $font-size--sm:           $h5 !default;
 
@@ -88,7 +88,7 @@ $breakpoint--md:          50em !default;
 $breakpoint--lg:          60em !default;
 
 // Max container width
-$max-container-width:     40em !default;
+$max-container-width:     600px !default;
 
 
 // Spaces
@@ -106,8 +106,8 @@ $heading-mb:              $p-mb !default;
 // Links
 // -------------------------------------------------------------------
 // Link colors
-$link-color:              $text-color !default;
-$link-hover-color:        $red !default;
+$link-color:              $red !default;
+$link-hover-color:        darken($link-color, 10%) !default;
 $active-link-color:       darken($link-hover-color, 25%) !default;
 
 
