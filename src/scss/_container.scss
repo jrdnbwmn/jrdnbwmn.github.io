@@ -1,5 +1,8 @@
 // Base container
 // -------------------------------------------------------------------
 .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     max-width: $max-container-width;
 }
