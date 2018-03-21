@@ -9,7 +9,8 @@
 .link:visited {
     color: $link-color;
     text-decoration: none;
-    transition: color $fade;
+    transition: color $fade, border-color $fade;
+    border-bottom: 1px solid $link-color;
 }
 
 .default-links a:hover,
@@ -17,13 +18,48 @@
 .link:hover,
 .link:focus {
     color: $link-hover-color;
-    text-decoration: none;
+    border-color: $link-hover-color;
 }
 
 .default-links a:active,
 .link:active {
     background-image: none;
     color: $active-link-color;
+    border-color: $active-link-color;
     outline: 0;
-    transition: color $fade;
+    transition: color $fade, border-color $fade;
+}
+
+// Non-text/UI links
+.link--ui,
+.link--ui:link,
+.link--ui:visited {
+    border: none;
+}
+
+.link--ui:hover,
+.link--ui:focus {
+    color: $link-hover-color;
+}
+
+.link--ui:active {
+    color: $active-link-color;
+}
+
+
+// Gray text links
+.link--gray,
+.link--gray:link,
+.link--gray:visited {
+    color: $dark-gray;
+    border: none;
+}
+
+.link--gray:hover,
+.link--gray:focus {
+    color: $link-color;
+}
+
+.link--gray:active {
+    color: $link-color;
 }
