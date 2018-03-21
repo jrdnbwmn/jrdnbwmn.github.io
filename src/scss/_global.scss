@@ -1,3 +1,22 @@
+// Museo Sans
+// -------------------------------------------------------------------
+@font-face {
+    font-family: 'Museo Sans Light';
+    src: url('../fonts/MuseoSans_300-webfont.woff2') format('woff2'),
+         url('../fonts/MuseoSans_300-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Bold';
+    src: url('../fonts/MuseoSans_700-webfont.woff2') format('woff2'),
+         url('../fonts/MuseoSans_700-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 // Base global styles
 // -------------------------------------------------------------------
 // 2. Set the default font stylings for the entire project.
@@ -31,6 +50,14 @@ body {
     margin: 0;
     padding: 0;
     -moz-osx-font-smoothing: grayscale; // [1]
+
+    // OpenType features: https://practice.typekit.com/lesson/caring-about-opentype-features/
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures contextual;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+    -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+    font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
 // Remove text-shadow in selection highlight: h5bp.com/i
@@ -50,23 +77,4 @@ img::selection {
 }
 img::-moz-selection {
     background: transparent;
-}
-
-
-// Museo Sans
-// -------------------------------------------------------------------
-@font-face {
-    font-family: 'Museo Sans Light';
-    src: url('../fonts/MuseoSans_300-webfont.woff2') format('woff2'),
-         url('../fonts/MuseoSans_300-webfont.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Museo Sans Bold';
-    src: url('../fonts/MuseoSans_700-webfont.woff2') format('woff2'),
-         url('../fonts/MuseoSans_700-webfont.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
 }

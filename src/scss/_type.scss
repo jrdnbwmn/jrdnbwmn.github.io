@@ -93,7 +93,7 @@ hr {
 // Utilities
 // -------------------------------------------------------------------
 // Weight
-.bold                    { font-family: "Gotham Bold", sans-serif; }
+.bold                    { font-family: $bold; font-weight: 700; }
 .regular                 { font-weight: normal; }
 .italic                  { font-style: italic; }
 

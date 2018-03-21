@@ -31,13 +31,10 @@ $baseline:                .4rem !default;
 // Typography
 // -------------------------------------------------------------------
 // Font families
-$sans-serif:              "Museo Sans Light", Georgia, Avenir, "Avenir Next", Trebuchet, Verdana,
-                          sans-serif !default;
-$serif:                   Georgia, Times, serif !default;
-$monospace:               Monaco, Menlo, Consolas,
-                          monospace !default;
-$bold:                    "Museo Sans Bold", Georgia, Avenir, "Avenir Next", Trebuchet, Verdana,
-                          sans-serif !default;
+$sans-serif:              "Museo Sans Light", "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serif:                   Georgia, serif !default;
+$monospace:               Monaco, Menlo, Consolas, monospace !default;
+$bold:                    "Museo Sans Bold", "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 $font-family--base:       $sans-serif !default;
 $font-family--heading:    $bold !default;
@@ -73,7 +70,7 @@ $font-size--lg:           $h3 !default;
 $font-size--sm:           $h5 !default;
 
 // Weights
-$font-weight--base:       400 !default;
+$font-weight--base:       300 !default;
 $font-weight--heading:    700 !default;
 
 // Line heights
