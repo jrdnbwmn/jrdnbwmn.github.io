@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Gotham Bold", Avenir, "Avenir Next", sans-serif;
+    font-family: $font-family--heading;
     font-weight: $font-weight--heading;
     line-height: $line-height--heading;
     margin-top: 0;

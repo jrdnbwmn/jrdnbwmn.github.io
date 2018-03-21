@@ -31,14 +31,16 @@ $baseline:                .4rem !default;
 // Typography
 // -------------------------------------------------------------------
 // Font families
-$sans-serif:              "Gotham Book", Avenir, "Avenir Next", Trebuchet, Verdana,
+$sans-serif:              "Museo Sans Light", Georgia, Avenir, "Avenir Next", Trebuchet, Verdana,
                           sans-serif !default;
 $serif:                   Georgia, Times, serif !default;
 $monospace:               Monaco, Menlo, Consolas,
                           monospace !default;
+$bold:                    "Museo Sans Bold", Georgia, Avenir, "Avenir Next", Trebuchet, Verdana,
+                          sans-serif !default;
 
 $font-family--base:       $sans-serif !default;
-$font-family--heading:    $sans-serif !default;
+$font-family--heading:    $bold !default;
 $font-family--reading:    $serif !default;
 $font-family--ui:         $sans-serif !default;
 $font-family--code:       $monospace !default;
@@ -99,7 +101,7 @@ $space-3:                 $baseline*8 !default;
 $space-4:                 $baseline*11 !default;
 
 // Specific margins
-$p-mb:                    $space-2 !default;
+$p-mb:                    $space-1 !default;
 $heading-mb:              $p-mb !default;
 
 
