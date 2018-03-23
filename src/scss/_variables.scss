@@ -4,11 +4,11 @@
 $gray-base:               #a0a2a5 !default;
 
 $black:                   #000 !default;
-$darkest-gray:            darken($gray-base, 36%) !default;
-$dark-gray:               darken($gray-base, 18%) !default;
-$gray:                    $gray-base !default;
-$light-gray:              lighten($gray-base, 18%) !default;
-$lightest-gray:           lighten($gray-base, 36%) !default;
+$darkest-gray:            darken($gray-base, 36%) !default; // #454649
+$dark-gray:               darken($gray-base, 18%) !default; // #717478
+$gray:                    $gray-base !default; // #a0a2a5
+$light-gray:              lighten($gray-base, 18%) !default; // #cfd0d2
+$lightest-gray:           lighten($gray-base, 36%) !default; // #fefefe
 $white:                   #fff !default;
 
 // Hues
