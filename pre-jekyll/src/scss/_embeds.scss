@@ -1,0 +1,14 @@
+// Base embed styles
+// -------------------------------------------------------------------
+// Make stuff responsive
+img, canvas, iframe, video, svg { max-width: 100%; }
+
+.logo {
+    height: 20px;
+    width: 16px;
+}
+
+.icon {
+    height: 15px;
+    vertical-align: sub;
+}
