@@ -13,34 +13,55 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Jordan Bowman
+email: desk@jrdnbwmn.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.jrdnbwmn.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: jrdnbwmn
+github_username: jrdnbwmn
+
+# Posts
+permalink: /:title
 
 # Build settings
 markdown: kramdown
-theme: jrdnbwmn
+theme: minima # can eventually delete this
 plugins:
   - jekyll-feed
 
 # Other
 timezone: America/Denver
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+# Defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+
+# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - README.md
+  - pre-jekyll
+
+# Keep these files safe
+keep_files:
+  - .git
+  - .svn
+  - .gitignore
