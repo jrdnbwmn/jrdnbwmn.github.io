@@ -29,9 +29,9 @@ permalink: /:title
 
 # Build settings
 markdown: kramdown
-theme: minima # can eventually delete this
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Other
 timezone: America/Denver
