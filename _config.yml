@@ -71,11 +71,6 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
-  - 
-    scope:
-      path: ""
-    values:
-      image: /img/socialbanner.jpg
 
 # Exclude from processing
 exclude:
