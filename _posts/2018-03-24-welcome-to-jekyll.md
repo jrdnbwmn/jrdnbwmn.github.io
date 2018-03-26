@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+description: A short description of the page's content
+image: URL to an image associated with the post, page, or document (e.g., /assets/page-pic.jpg)
 date:   2018-03-24 09:26:56 -0600
 categories: jekyll update
 tags: jekyll
