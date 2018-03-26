@@ -1,12 +1,20 @@
 {
-  "name": "browser-sync-jekyll",
+  "name": "pear-jekyll",
   "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "description": "Gulp setup for Jordan Bowman's site",
+  "private": true,
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "*",
     "gulp-sass": "*",
     "browser-sync": "*",
-    "gulp-autoprefixer": "*"
+    "gulp-util": "*",
+    "gulp-combine-mq": "*",
+    "gulp-clean-css": "*",
+    "gulp-size": "*",
+    "gulp-imagemin": "*",
+    "gulp-plumber": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-watch": "*"
   }
 }

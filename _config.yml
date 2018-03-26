@@ -16,7 +16,7 @@
 title: Jordan Bowman
 email: desk@jrdnbwmn.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Jordan Bowman makes stuff for the web and interviews entrepreneurs.
+  I make stuff for the web and interview entrepreneurs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.jrdnbwmn.com" # the base hostname & protocol for your site, e.g. http://example.com
 author: jrdnbwmn
@@ -37,7 +37,7 @@ twitter_username: jrdnbwmn
 github_username: jrdnbwmn
 
 # Posts
-permalink: /:title
+permalink: /post/:title/
 
 # Build settings
 markdown: kramdown
@@ -52,8 +52,8 @@ jekyll-archives:
     - month
     - tags
   layouts:
-    year: archive-date
-    month: archive-date
+    year: archive-year
+    month: archive-month
     tag: archive-tag
   permalinks:
     year: '/year/:year/'
@@ -65,12 +65,17 @@ timezone: America/Denver
 
 # Defaults
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "post"
+    -
+        scope:
+            path: "" # an empty string here means all files in the project
+            type: "posts" # previously `post` in Jekyll 2.2.
+        values:
+          layout: "post"
+    -
+        scope:
+            path: "img"
+        values:
+            image: true
 
 # Exclude from processing
 exclude:

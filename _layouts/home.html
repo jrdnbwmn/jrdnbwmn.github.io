@@ -2,33 +2,33 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<div class="container">
 
-  {{ content }}
+    <div class="mb3">
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+        <h1 class="mb1">Hi, I’m Jordan Bowman.</h1>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+        <p class="h3 mb3">👨‍💻 I make stuff for the web.</p>
 
+        {%- include newsletter-sm.html -%}
+
+    </div>
+
+</div>
+
+<div class="container--lg pt1 pb4">
+    <div class="grid-row">
+        <div class="grid-column span-half mt2">
+            <blockquote class="blockquote">
+                <p class="mb1">Jordan is not afraid of his ideas, he is a clear thinker, and an advocate for a good cause. He possesses creative abilities that help him make any project colorful and&nbsp;worthwhile.</p>
+                <p class="text--primary-color">Travis Standley, Curtiss-Wright</p>
+            </blockquote>
+        </div>
+        <div class="grid-column span-half mt2">
+            <blockquote class="blockquote">
+                <p class="mb1">Jordan is an eager learner, a careful listener, and an honest communicator. He has an incredible amount of "depth" and understanding of fundamental business and success&nbsp;principles.</p>
+                <p class="text--primary-color">Treavor Allen, QMaSS</p>
+            </blockquote>
+        </div>
+    </div>
 </div>
