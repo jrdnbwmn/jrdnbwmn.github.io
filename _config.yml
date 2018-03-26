@@ -32,6 +32,21 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap # Keep at end
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - tags
+  layouts:
+    year: archive-date
+    month: archive-date
+    tag: archive-tag
+  permalinks:
+    year: '/year/:year/'
+    month: '/month/:year-:month/'
+    tag: '/tag/:name/'
 
 # Other
 timezone: America/Denver

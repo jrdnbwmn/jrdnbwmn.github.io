@@ -1,9 +1,0 @@
----
-layout: page
----
-
-{% for post in site.tags[page.tag] %}
-    <a href="{{ post.url | absolute_url }}">
-      {{ post.title }}
-    </a>
-{% endfor %}
