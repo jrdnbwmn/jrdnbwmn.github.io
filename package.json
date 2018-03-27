@@ -12,7 +12,6 @@
     "gulp-combine-mq": "*",
     "gulp-clean-css": "*",
     "gulp-size": "*",
-    "gulp-imagemin": "*",
     "gulp-plumber": "*",
     "gulp-autoprefixer": "*",
     "gulp-watch": "*"

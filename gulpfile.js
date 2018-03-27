@@ -7,8 +7,6 @@ var gulp                    = require('gulp'),
     autoprefixer            = require("gulp-autoprefixer"),
     cssmin                  = require("gulp-clean-css"),
 
-    imagemin                = require("gulp-imagemin"),
-
     size                    = require("gulp-size"),
     plumber                 = require("gulp-plumber"),
     cp                      = require('child_process'),
@@ -75,19 +73,6 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
-// Image task
-gulp.task("images", function() {
-    return gulp.src("/img/**/*.+(png|jpeg|jpg|gif|svg)")
-        // Prevent gulp.watch from crashing
-        .pipe(plumber(onError))
-        // Minify the images
-        .pipe(imagemin())
-        // Where to store the finalized images
-        .pipe(gulp.dest("_site/img"))
-        // Reload browsersync
-        .pipe(browserSync.reload({stream:true}));
-});
-
 // Watch
 gulp.task('watch', function () {
     // Watch scss files
@@ -95,7 +80,7 @@ gulp.task('watch', function () {
     // Watch image files
     gulp.watch('img/**/*.+(png|jpeg|jpg|gif|svg)', ['images']);
     // Watch HTML/Markdown files
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*', 'img'], ['jekyll-rebuild']);
 });
 
 // Default task, running just `gulp` will compile the sass,
