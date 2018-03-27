@@ -73,7 +73,7 @@ hr {
 }
 
 // Blockquote
-.blockquote {
+blockquote {
     border-left: 4px solid $light-gray;
     font-family: $sans-serif;
     font-style: normal;
@@ -88,13 +88,13 @@ hr {
     }
 }
 
-.blockquote:before, .blockquote:after { content: ""; }
+blockquote:before, blockquote:after { content: ""; }
 
 
 // Utilities
 // -------------------------------------------------------------------
 // Weight
-.bold                    { font-family: $bold; font-weight: 700; }
+.bold, strong            { font-family: $bold; font-weight: 700; }
 .regular                 { font-weight: normal; }
 .italic                  { font-style: italic; }
 

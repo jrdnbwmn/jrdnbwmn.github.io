@@ -4,7 +4,14 @@
 .no-bullets { list-style: none; }
 
 // Indented list
-.list--indented { padding-left: $baseline*6; }
+.list--indented { padding-left: $list-indent; }
+
+.indented-lists {
+    ul, ol {
+        padding-left: $list-indent;
+        margin-bottom: $p-mb;
+    }
+}
 
 // Inline list
 .list--inline {
@@ -17,10 +24,6 @@
     }
 }
 
-.tag-list a:after {
-    content: ", ";
-}
-
-.tag-list a:last-child:after {
-    content: "";
-}
+// Tag list
+.tag-list a:after { content: ", "; }
+.tag-list a:last-child:after { content: ""; }
