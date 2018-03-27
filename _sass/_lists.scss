@@ -16,3 +16,11 @@
         line-height: 1;
     }
 }
+
+.tag-list a:after {
+    content: ", ";
+}
+
+.tag-list a:last-child:after {
+    content: "";
+}

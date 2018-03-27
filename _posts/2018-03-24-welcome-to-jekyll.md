@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "Welcome to Jekyll!"
 description: A short description of the page's content
 image: URL to an image associated with the post, page, or document (e.g., /assets/page-pic.jpg)
 date:   2018-03-24 09:26:56 -0600
 categories: jekyll update
-tags: jekyll
+tags: [ jekyll, stuff ]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
