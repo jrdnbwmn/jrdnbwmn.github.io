@@ -4,24 +4,24 @@ layout: default
 
 <div class="container--lg pb4">
 
-    <h1 class="mb3">Posts</h1>
-
     <div class="grid-row">
 
-        <!-- Posts -->
-        <div class="grid-column span-7">
+        <!-- Tags -->
+        <div class="grid-column span-3">
+            <h3 class="mb2">Tags</h3>
             <ul class="no-bullets">
-                {% for post in site.posts %}
-                <li class="mb2"><a href="{{ post.url }}" class="link">{{ post.title }}</a></li>
+                {% for tag in site.tags %}
+                <li class="mb1"><a href="/tag/{{ tag[0] | slugify }}" class="link link--gray">{{ tag[0] | capitalize }}</a></li>
                 {% endfor %}
             </ul>
         </div>
 
-        <!-- Tags -->
-        <div class="grid-column span-5">
+        <!-- Posts -->
+        <div class="grid-column">
+            <h3 class="mb2">Posts</h3>
             <ul class="no-bullets">
-                {% for tag in site.tags %}
-                <li class="mb1"><a href="/tag/{{ tag[0] | slugify }}" class="link link--gray">{{ tag[0] | capitalize }}</a></li>
+                {% for post in site.posts %}
+                <li class="mb2"><a href="{{ post.url }}" class="link">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
