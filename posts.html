@@ -6,22 +6,27 @@ layout: default
 
     <div class="grid-row">
 
+        <div class="grid-column span-3"></div>
+        <div class="grid-column span-9"><h2 class="mb2">Posts</h2></div>
+
         <!-- Tags -->
         <div class="grid-column span-3">
-            <h3 class="mb2">Tags</h3>
+            <h4 class="mb1">Tags</h4>
             <ul class="no-bullets">
                 {% for tag in site.tags %}
-                <li class="mb1"><a href="/tag/{{ tag[0] | slugify }}" class="link link--gray">{{ tag[0] | capitalize }}</a></li>
+                <li class="mb0"><a href="/tag/{{ tag[0] | slugify }}" class="link link--gray">{{ tag[0] | capitalize }}</a></li>
                 {% endfor %}
             </ul>
         </div>
 
         <!-- Posts -->
-        <div class="grid-column">
-            <h3 class="mb2">Posts</h3>
+        <div class="grid-column span-9">
             <ul class="no-bullets">
                 {% for post in site.posts %}
-                <li class="mb2"><a href="{{ post.url }}" class="link">{{ post.title }}</a></li>
+                <li class="mb2">
+                    <a href="{{ post.url }}" class="link">{{ post.title }}</a>
+                    <span class="block text--dark-gray">{{ post.date | date: "%-d %B %Y" }}</span>
+                </li>
                 {% endfor %}
             </ul>
         </div>

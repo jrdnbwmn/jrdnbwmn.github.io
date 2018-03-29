@@ -63,3 +63,20 @@
 .link--gray:active {
     color: $link-color;
 }
+
+// Text color links
+.link--gray,
+.link--gray:link,
+.link--gray:visited {
+    color: $text-color;
+    border: none;
+}
+
+.link--gray:hover,
+.link--gray:focus {
+    color: $link-color;
+}
+
+.link--gray:active {
+    color: $link-color;
+}
