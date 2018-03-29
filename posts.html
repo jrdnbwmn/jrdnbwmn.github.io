@@ -25,7 +25,7 @@ layout: default
                 {% for post in site.posts %}
                 <li class="mb2">
                     <a href="{{ post.url }}" class="link">{{ post.title }}</a>
-                    <span class="block text--dark-gray">{{ post.date | date: "%-d %B %Y" }}</span>
+                    <span class="block text--dark-gray">{{ post.date | date_to_string }}</span>
                 </li>
                 {% endfor %}
             </ul>
