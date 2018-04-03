@@ -12,9 +12,9 @@ layout: default
     
     </article>
     
-    <p class="text--dark-gray mt3 tag-list">Posted in
+    <p class="text--dark-gray mt4 tag-list">Posted in
         {% for tag in page.tags %}
-        <a class="link link--gray" href="{{ site.baseurl }}/tag/{{ tag | slugize }}">{{ tag | capitalize }}</a>
+        <a class="link link--gray capitalize" href="{{ site.baseurl }}/tag/{{ tag | slugize }}">{{ tag }}</a>
         {% endfor %}
     </p>
     
