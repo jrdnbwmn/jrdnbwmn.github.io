@@ -1,6 +1,5 @@
 ---
 title:  "Manuel Frigerio on pricing, paid advertising, and Product Hunt"
-date:   2018-03-24 09:26:56 -0600
 tags: [ pricing, paid advertising, query ]
 ---
 
