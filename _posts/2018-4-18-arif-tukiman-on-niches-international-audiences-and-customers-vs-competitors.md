@@ -1,6 +1,5 @@
 ---
 title:  "Arif Tukiman on niches, international audiences, and customers vs competitors"
-date:   2018-03-24 09:26:56 -0600
 tags: [ niches, customers, competition, query ]
 ---
 
