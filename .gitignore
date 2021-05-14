@@ -1,8 +1,11 @@
-### Generic front-end gitignore template
-# Mostly pulled from: https://gist.github.com/octocat/9257657
-# This can be a useful tool: http://www.gitignore.io/
+# Jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 
-### Compiled source ###
+# Compiled source
 *.com
 *.class
 *.dll
@@ -10,7 +13,7 @@
 *.o
 *.so
 
-### Packages ###
+# Packages
 # it's better to unpack these files and commit the raw source
 # git has its own built in compression methods
 *.7z
@@ -22,12 +25,14 @@
 *.tar
 *.zip
 
-### Logs and databases ###
+# Logs and databases
+logs
 *.log
+npm-debug.log*
 *.sql
 *.sqlite
 
-### OS or Editor files ###
+# OS or Editor files
 .DS_Store
 .DS_Store?
 ._*
@@ -45,14 +50,12 @@ nbproject
 *.sublime-workspace
 .idea
 
-### Sass ###
-.sass-cache
+# Sass
+.sass-cache/
+*.css.map
 
-### Gulp/Node ###
-node_modules
+# Gulp/Node
+node_modules/
 
-### Jekyll ###
-_site/
-.bundle/
-.jekyll-metadata
-Gemfile.lock
+# Other
+archive
